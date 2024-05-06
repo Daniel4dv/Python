@@ -116,7 +116,7 @@ print("Fim")
 
 # ex: variavvel (lanche[0,1,2,3,4])
 # podemos printar escolhendo o item da lista
-lanhce={1,2,3,4,5}
+lanche={1,2,3,4,5}
 print(lanche[1]) # printa apenas o 1
 print(lanche[0:3]) #de 0 ate 2
 print(lanche[2:]) # ate o fina
@@ -143,4 +143,5 @@ for comida in lanche:
     print(c.index(4)) # mostra em que posição aparece o 4 pela primeira vez
 #comando
     del(lanche) #appaga a variavel composta por completa
+
 
