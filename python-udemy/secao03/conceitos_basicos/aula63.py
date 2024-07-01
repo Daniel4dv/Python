@@ -1,3 +1,5 @@
+# interpolarização de strings, armazenando letras em strings
+
 nome ='luis otavio'
 
 tam = len(nome)
