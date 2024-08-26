@@ -9,9 +9,10 @@
 # escopo()
 b= 5
 a =4
+
 def funcao1(): #criando uma funcao
-    global a
-    a=1  #variavel da funcao // nao altera variaveis globais, como o a criado anteriormente, continuara valendo 5 apos executar a funcao
+    global a #tornar a varivale na funcao global, podendo altetar o valor dela
+    a=1  #variavel da funcao // nao altera variaveis globais, como o a criado anteriormente, continuara valendo 4 apos executar a funcao
     def funcao2(): #definindo uma funcao dentro de outra funcao
         a = 2
         print(f'funcao2 = {a}')      
