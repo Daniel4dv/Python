@@ -36,5 +36,10 @@ def par_impar(x):
         par = True
     return par
 
-numero_par = par_impar(5)
-print(numero_par)
+x = int(input('Digite um numero para descobrir se ele é impar ou par:'))
+
+res = par_impar(x)
+if res:
+    print('O numero é par')
+else:
+    print('O número é impar')
