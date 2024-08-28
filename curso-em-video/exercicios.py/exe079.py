@@ -9,6 +9,7 @@ while True:
             continue
         else:
             numeros.append(numero)
+            print('Valor adicionado!')
     else:
         print('programa encerrado!')
         break
@@ -16,5 +17,4 @@ while True:
 numeros.sort()
 print(f'Lista digitada: {numeros}')
 
-     
     
