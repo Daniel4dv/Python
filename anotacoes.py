@@ -1,3 +1,4 @@
+exit()
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   MANIPULAÇÃO DE STRINGSS    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 frase = " Dou o Cu Mesmo De Acordo  "
@@ -33,10 +34,10 @@ x=random.randint(0,9)
 print(x)
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CONDIÇÕES ANINHADAS   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-x=float(4.5))
+x=float(4.5)
 if x>5: # com 2 pontos, n esquecer
     print("maior q 5")
-elif: x<4 # com 2 pontos, n esquecer
+elif x<4: # com 2 pontos, n esquecer
     print("menor q 4")
 else:
     print("nem um nem outro")
@@ -73,9 +74,9 @@ cores= {}
 estrutura = "amarelo': '\033[35m"
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< conversão para binarios etc >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-binario bin(var1)
-octal oct(var1)
-hexadecimal hex(var1)
+bin(var1) #binario 
+oct(var1) #octal
+hex(var1) #hexadecimal
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< repetições FOR>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 

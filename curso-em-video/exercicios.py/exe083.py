@@ -1,10 +1,18 @@
-while True:
-     
-    expressão = input('Digite uma expressão qualquer: ')
+exp = input('Digite uma expressão matematica: ')
+parenteses = []
 
-    parenteses = [expressão[-2],expressão[-1]]
-    print(parenteses)
-    if parenteses[0]=='(' and parenteses[1] == ')':
-        print('Os parenteses foram digitados corretamente')
-    else:
-        print('Os parenteses nao estao em ordem correta')
+for simb in exp:
+    if simb == '(':
+        parenteses.append(simb)
+    elif simb == ')':
+        if len(parenteses) > 0:
+            parenteses.pop()
+        else:
+            parenteses.append(simb)
+            break
+
+print(parenteses)
+if len(parenteses) == 0:
+    print('A expressão esta correta')
+else:
+    print("A expressão esta inválida")
