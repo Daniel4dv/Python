@@ -3,12 +3,21 @@ dado = []
 
 for i in range(3):
     dado.append(input('Nome:'))
-    dado.append(input('Idade:'))
+    dado.append (int(input('Idade:')))
     galera.append(dado[:])
-    dado.clear()
+    dado.clear()  # limpa uma lista
 
 print(galera)
+menores=[]
+maiores = []
+for p in galera:
+    if p[1] >18:
+        maiores.append(p)
+    else:
+        menores.append(p)
 
+print(f'maiores de idade {maiores}')
+print(f'Menores de idade {menores}')
 exit()
 teste = []
 
