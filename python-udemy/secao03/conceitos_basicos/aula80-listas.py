@@ -15,7 +15,7 @@ lista.append(50) #adiciona um item ao final da lista
 print(lista)
 ultimo_valor =  lista.pop() #remove o ultimo elemento da lista
 print(lista)
-lista.pop(0)
+lista.pop(0)  #REMOVE UM ELEMENTO ESPECIFICO DA LISTA
 print(ultimo_valor)
 print(lista)
 
