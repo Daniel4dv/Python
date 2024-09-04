@@ -1,13 +1,13 @@
 jogador = {}
 
 jogador['nome'] = str(input('Nome do Jogador: '))
-partidas = int(input('Quantas partidas ele jogou: '))
+partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou: '))
 gols = []
 for g in range(partidas):
     gol = int(input(f'Quantos gols ele fez na partida {g+1}: '))
     gols.append(gol)
 
-jogador['gols'] = gols
+jogador['gols'] = gols[:]
 jogador['total'] = f'{sum(gols)} gols em {partidas} partidas'
 
 print(jogador)

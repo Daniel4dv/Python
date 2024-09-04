@@ -1,18 +1,26 @@
 import random
+import time
+import operator
 
-jogada = 0
-jogadas = {}
+jogo = {
+    'jogador1': random.randint(1,6),
+    'jogador2': random.randint(1,6),
+    'jogador3': random.randint(1,6),
+    'jogador4': random.randint(1,6)}
 
-for i in range(4):
-    jogada = random.randint(1,6)
-    jogadas[f'dado{i+1}'] = jogada
+for k,v in jogo.items():
+    print(f'O {k} tirou... ',end=' ')
+    time.sleep(1)
+    print(f'{v}')
+ 
+# colocando dicionario em ordem
 
-print(jogadas)
+raking = {}
+raking = sorted(jogo.items(),key=operator.itemgetter(1),reverse=True) #particularidades de um dicionario
 
-for i,d in enumerate(jogadas.values()):
-    print(f'Jogador{i+1} : {d}')
-        
-jogadas = dict(sorted(jogadas.values(),reverse=True))
-print('Ranking dos Maiores valores')
+print('=-'*30)
+print('Raking dos vencedores')
+print('=-'*30)
 
-print(jogadas)
+for i, v in enumerate(raking):
+    print(f'{i+1}º {v[0]}({v[1]})')
