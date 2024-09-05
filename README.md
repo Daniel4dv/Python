@@ -1,2 +1,2 @@
 # Python
- curso de python
+ Projetos, anotações, exercícios feitos durante meus estudos na linguagem Python
