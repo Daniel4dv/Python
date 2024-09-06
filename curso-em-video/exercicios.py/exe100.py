@@ -8,12 +8,18 @@ def sorteia(tam):
 
 lg = sorteia(5)
 print(f'Lista Gerada: {lg}')
+print()
 
-soma = 0
-for v in lg:
-    if v%2==0:
-        soma +=v
-    
+
+
+def somapar(lista):
+    soma = 0
+    for v in lista:
+        if v%2==0:
+            soma +=v
+    return soma
+
+soma = somapar(lg)
 
 print(f'Somando os valores pares de {lg}: {soma}')
 

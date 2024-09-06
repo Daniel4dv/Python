@@ -2,7 +2,17 @@ def maior(lista):
     print(max(lista))
 
 def maior_arg(*arg):
-    return max(arg)
+    maior = 0
+    for i in arg:
+        print(f'{i}',end=' ')
+        if i == arg[0]:
+            maior = i
+        else:
+            if i> maior:
+                maior = i
+    print(f'Maior: {maior}')
+    # arg = list(arg)
+    # return max(arg)
 
 v = 1
 lista = []
@@ -23,6 +33,6 @@ print(lista)
 print(f'Maior valor da lista:',end=' ')
 {maior(lista)}
 
-print('=-'*50)
+print('=-'*20)
 
 maior_arg(8,4,5,6,9,3,1)

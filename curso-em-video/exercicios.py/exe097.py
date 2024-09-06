@@ -1,8 +1,11 @@
 def escreva(titulo):
-    print('~'*(len(titulo)))
-    print(f'{titulo}')
-    print('~'*(len(titulo)))
+    tam = len(titulo)+4
+    print('~'*tam)
+    print(f'  {titulo:}')
+    print('~'*tam)
 
 escreva('oieeeeeee')
+escreva('cabasso')
+escreva('Eu quero gossar')
 
     
