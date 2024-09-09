@@ -8,17 +8,17 @@ def boletim(*args,sit=False):
     notas = list(args)
     print(f'Notas: {notas}')
     print()
-    conclusao = {}
-    conclusao['Quantidade de notas'] = len(notas)
-    conclusao['Maior nota'] = max(notas)
-    conclusao['Menor nota'] = min(notas)
-    conclusao['Media da turma'] = sum(notas)/conclusao['Quantidade de notas']
+    b = {}
+    b['Quantidade de notas'] = len(notas)
+    b['Maior nota'] = max(notas)
+    b['Menor nota'] = min(notas)
+    b['Media da turma'] = sum(notas)/b['Quantidade de notas']
     if sit:
-        conclusao['Status'] = 'BOA' if  conclusao['Media da turma']>6 else 'RUIM'
-    return conclusao
+        b['Status'] = 'BOA' if  b['Media da turma']>6 else 'RUIM'
+    return b
 
 
-print(boletim(10,5,7.5,4,2,4.5,sit=True))
+print(boletim(0,5,7.5,4,2,4.5,sit=True))
 
 help(boletim)
 

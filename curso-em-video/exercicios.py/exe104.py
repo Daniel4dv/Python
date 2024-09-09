@@ -5,7 +5,7 @@ def validador_inteiro(n=0):
             n = int(n)
             break
         except ValueError:
-            print('Este valor não é inteiro, Tente novamente')
+            print('\033[031mEste valor não é inteiro, Tente novamente\033[m')
     return n 
 
 

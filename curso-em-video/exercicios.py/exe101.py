@@ -1,6 +1,7 @@
-from datetime import datetime
 idade = 0
+
 def voto(nasc):
+    from datetime import datetime
     if nasc !=0:
         resultado = 'NEGADO'
         ano_atual =  datetime.now().year
