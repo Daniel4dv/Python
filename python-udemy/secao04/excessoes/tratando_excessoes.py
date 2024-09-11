@@ -12,7 +12,20 @@ except ValueError as erro: ## classe do erro as instancia do erro
     print('Erro:', erro.__class__.__name__)  ## Nome da classe da instancia do erro
     print('Digite um valor válido')
 except NameError:
-    print('O val or de divisão precisa ser digitado')
+    print('O valor de divisão precisa ser digitado')
 except Exception as erroDesconhecido:
     print('Erro:',erroDesconhecido.__class__.__name__)
     print('Erro desconhecido')
+else:
+    print('è executado apenas se não houver erros no codigo!') #Como um else de except
+finally:
+    print('Fechar o arquivo')  #Ocoprrendo excessões ou não, o finally será executado, podendo finalizar ações em casos de erro ou não
+
+#não é possivel usar o try sozinho ou o try:else
+
+
+exit()
+try:
+    print(1)
+finally:
+    print(10)
