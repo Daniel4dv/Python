@@ -8,8 +8,8 @@
 # O python conhece todos os módulos e pacotes presentes
 # nos caminhos de sys.path
 
-from modularizacao_mod import nome
-from modularizacao_mod import soma
+from modulo import nome
+from modulo import soma
 
 # print('Este módulo se chama', __name__)
 print(nome,soma)
