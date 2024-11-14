@@ -16,7 +16,7 @@ def metade(x):
 
 
 def moeda(saldo):
-    return f'R${saldo:.2f}'
+    return f'R${saldo:.2f}'.replace('.',',')
 
 
 # porcentagens

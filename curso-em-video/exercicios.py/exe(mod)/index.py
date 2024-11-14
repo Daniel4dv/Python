@@ -9,7 +9,7 @@ importlib.reload(moeda)
 
 moeda.cabecalho()
 
-print(f'Saldo: {wallet}')
+print(f'Saldo: {moeda.moeda(wallet)}')
 while True:
     print('What do you wanna do?')
     print('1 - Increase')

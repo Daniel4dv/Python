@@ -23,7 +23,7 @@ def validar(n):
             print('Digite um valor válido!')
 
 def moeda(saldo):
-    return f'R${saldo:.2f}'
+    return f'R${saldo:.2f}.'.replace('.',',')
 
 
 # porcentagens
