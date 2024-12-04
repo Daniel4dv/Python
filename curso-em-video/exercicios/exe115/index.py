@@ -1,30 +1,30 @@
-from exe115.lib.interface import *
+import modulos
+import arquivo
 import os
 from time import sleep
 
-arq = 'cadastro.txt'
 
-# if arquivo.arqExiste(arq):
-#     print('ok')
-# else:
-#     print('nada ok')
 
+
+arquivo.arquivoExiste('cadastro.txt')
 
 
 while True:
-    menu(["Ver pessoas cadastradas","Cadastrar pessoas","Sair do sistema"])
-    op = leiaint()
+    modulos.menu(["Ver pessoas cadastradas","Cadastrar pessoas","Sair do sistema"])
+    op = modulos.leiaint('Selecione uma opção:')
     
     match op:
         case 1:
-            print(cabecalho("Voce escolheu 1"))
-            break
+            os.system('cls')
+            arquivo.lerArquivo('cadastro.txt')
         case 2:
-            print(("Voce escolheu 2"))
-            break
+            modulos.cabecalho('NOVO CADASTRO')
+            nome = str(input("Nome:"))
+            idade = modulos.leiaint('Idade:') 
+            arquivo.cadastrar('cadastro.txt',nome,idade)
         case 3:
             print(("Voce escolheu 3"))
-            encerramento()
+            modulos.encerramento()
             break
         case default:
             os.system('cls')

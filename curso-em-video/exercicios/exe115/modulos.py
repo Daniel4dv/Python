@@ -1,8 +1,8 @@
 
-def leiaint():
+def leiaint(q):
     while True:
         try:
-            n = input(">")
+            n = input(q)
             n = int(n)
             return n
         except Exception as erro:
@@ -10,8 +10,8 @@ def leiaint():
             continue
         
 
-def linha(tam=20):
-    print('=-'*tam)
+def linha(tam=50):
+    print('-'*tam)
 
 def cabecalho(txt):
     linha()
