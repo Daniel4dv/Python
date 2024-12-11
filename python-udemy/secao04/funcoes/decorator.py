@@ -4,15 +4,27 @@
 # Decoradores são usados para fazer o Python
 # usar as funções decoradoras em outras funções.
 
+
+
+def cria_funcao(funcao):
+    def interna(*args,**kwargs):
+        for arg in args:
+            is_string(arg)
+            resultado = funcao(*args,**kwargs)
+        return resultado
+    return interna   
+
+
+# sugar syntax
+@cria_funcao
 def inverte_string(string):
     return string[::-1]
 
 
-
-def cria_funcao(funcao):
-    def interna(string):
-        return funcao,string
-    return interna    
+def is_string(param):
+    if not isinstance(param,str):
+        raise TypeError('Parametro deve ser string')
+        
 
 
 
@@ -26,9 +38,10 @@ def cria_funcao(funcao):
 
 
 
+
 inverte_string_checada = cria_funcao(inverte_string)
 
-print(inverte_string_checada('bolado'))
+print(inverte_string_checada(123))
 
 
 
