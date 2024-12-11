@@ -1,3 +1,7 @@
+# ========================================================
+                        # aula 167
+# ========================================================
+
 def decoradora(func):
     print('decoradora 1')
 
@@ -12,3 +16,6 @@ def decoradora(func):
 @decoradora
 def soma(x,y):
     return x+y
+
+dez_cinco = soma(10,5)
+print(dez_cinco)
